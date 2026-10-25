@@ -110,7 +110,6 @@ def analyze_image(
                 system_instruction=SYSTEM_INSTRUCTION,
                 response_mime_type="application/json",
                 response_schema=ASSESSMENT_SCHEMA,
-                temperature=0.2,
                 max_output_tokens=MAX_OUTPUT_TOKENS,
             ),
         )

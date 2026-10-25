@@ -72,6 +72,7 @@ def test_gemini_request_uses_structured_schema():
     assert config.response_mime_type == "application/json"
     assert config.response_schema == ASSESSMENT_SCHEMA
     assert config.system_instruction
+    assert config.temperature is None
 
 
 def test_empty_model_response_is_rejected():

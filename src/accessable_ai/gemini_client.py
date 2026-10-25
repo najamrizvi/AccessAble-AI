@@ -109,7 +109,7 @@ def analyze_image(
             config=types.GenerateContentConfig(
                 system_instruction=SYSTEM_INSTRUCTION,
                 response_mime_type="application/json",
-                response_schema=ASSESSMENT_SCHEMA,
+                response_json_schema=ASSESSMENT_SCHEMA,
                 max_output_tokens=MAX_OUTPUT_TOKENS,
             ),
         )

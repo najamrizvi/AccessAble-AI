@@ -70,7 +70,7 @@ def test_gemini_request_uses_structured_schema():
 
     config = client.models.call_args["config"]
     assert config.response_mime_type == "application/json"
-    assert config.response_schema == ASSESSMENT_SCHEMA
+    assert config.response_json_schema == ASSESSMENT_SCHEMA
     assert config.system_instruction
     assert config.temperature is None
 

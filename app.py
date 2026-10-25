@@ -167,11 +167,20 @@ with left:
                 st.success("Assessment completed.")
             except ImageValidationError as exc:
                 st.error(str(exc))
-            except GeminiResponseError:
+            except GeminiResponseError as exc:
                 st.error(
                     "The AI service could not complete the assessment. "
                     "Please try again later or check your API quota and settings."
                 )
+                if (
+                    exc.diagnostic_code is not None
+                    or exc.diagnostic_status != "UNKNOWN"
+                ):
+                    st.caption(
+                        "Safe diagnostic: "
+                        f"HTTP code = {exc.diagnostic_code or 'unavailable'}; "
+                        f"status = {exc.diagnostic_status}"
+                    )
             except ResponseValidationError:
                 st.error(
                     "The service returned an assessment that could not be "

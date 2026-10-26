@@ -12,6 +12,24 @@ Upload an image, review the visible evidence identified by the model, understand
 
 > **Important:** AccessAble AI provides preliminary visual assistance only. It does not certify accessibility, determine legal compliance, replace professional assessment, or establish that a location is accessible based on the absence of detected barriers.
 
+## Application Screenshots
+
+### Application Overview
+
+![AccessAble AI application overview](docs/images/accessable-ai-overview.png)
+
+### Image Assessment
+
+![AccessAble AI image assessment](docs/images/accessable-ai-assessment.png)
+
+### Accessibility Findings
+
+![AccessAble AI accessibility findings](docs/images/accessable-ai-findings.png)
+
+### Recommended Checks
+
+![AccessAble AI recommended checks](docs/images/accessable-ai-recommendations.png)
+
 ## Features
 
 - **Image upload and validation:** Accepts JPEG, PNG, and WebP images.

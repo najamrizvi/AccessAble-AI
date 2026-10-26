@@ -1,5 +1,9 @@
 ﻿# AccessAble AI
 
+**🚀 [Try the Live Demo](https://accessable-ai.streamlit.app/)**
+
+Explore a preliminary AI-assisted visual accessibility assessment of an entrance or public space. Findings are suggestions, not accessibility certification, and must be verified on site.
+
 **AI-Powered Visual Accessibility Assessment**
 
 AccessAble AI is a browser-based application that uses a vision-capable AI model to help users examine photographs of entrances and public spaces for potential accessibility barriers.
@@ -177,11 +181,12 @@ The project does not provide permanent assessment history. Avoid submitting conf
 
 Gemini usage is subject to the provider's current availability, quotas, and terms. This project does not guarantee free-tier availability or a particular model's continued availability.
 
-## Development status
+## Development Status
 
-The initial local Git checkpoint is `be16a56` (`Build AccessAble AI visual accessibility review app`).
-
-The local automated test suite has passed 56 tests at that checkpoint. Live model availability and end-to-end inference remain separate verification items.
+- The initial local Git checkpoint is `be16a56` (`Build AccessAble AI visual accessibility review app`).
+- The local automated test suite passed 56 tests at that checkpoint.
+- The deployed Streamlit application has successfully completed an end-to-end image assessment using the configured Gemini model.
+- Assessment results are preliminary visual observations, not accessibility certification. Findings should be verified through appropriate on-site measurements and checks.
 
 ## License
 
